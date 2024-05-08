@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ping coming soon page</title>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Ping Logo">
+        </div>
+
+        <div class="launch-txt">
+            <p>We are launching </p>
+            <h1>soon!</h1>
+        </div>
+
+        <div class="subscribe-txt">
+            <p>Subscribe and get notified</p>
+        </div>
+
+        <form onsubmit="ValidateEmail()">
+            <input type="email" name="email" id="email" placeholder="Your email address..." required>
+            <button>Notify Me</button>
+        </form>
+
+        <div class="dashboard-img">
+            <img src="images/illustration-dashboard.png" alt="">
+        </div>
+
+        <div class="foot">
+            <div class="social-links">
+                <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+                <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+                <ion-icon name="logo-instagram" class="instagram"></ion-icon>
+            </div>
+
+            <div class="copyright">
+                <p>  &copy; Copyright Ping. All rights reserved.</p>
+            </div>
+        </div>
+    </main>
+
+<script>
+
+    
+function ValidateEmail() {
+let emailVal = document.getElementById("email").value;
+let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!emailPattern.test(emailVal)){
+    alert("Please provide valid email");
+    return false;
+}
+return true;
+}
+
+</script>
+
+</body>
+
+</html>

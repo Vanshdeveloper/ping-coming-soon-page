@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Blue: hsl(223, 87%, 63%);
+    --font1: "Libre Franklin", sans-serif;
+}
+
+::placeholder {
+    color: hsla(223, 87%, 63%, 0.644);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .logo {
+    padding: 50px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .launch-txt {
+    display: flex;
+}
+
+main .launch-txt p {
+    font-size: 35px;
+    font-family: var(--font1);
+    color: var(--Gray);
+}
+
+main .launch-txt h1 {
+    padding: 0 0 0 7px;
+    font-size: 35px;
+    font-family: var(--font1);
+    align-items: center;
+}
+
+main .subscribe-txt p {
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    font-family: var(--font1);
+}
+
+main form {
+    padding: 40px 0 50px 0;
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+main #email {
+    height: 45px;
+    width: 100%;
+    padding: 10px 15px;
+    background: #ffffff;
+    color: var(--Blue);
+    font-family: var(--font1);
+    border: 1px solid hsla(223, 87%, 63%, 0.596);
+    border-radius: 50px;
+}
+
+main button {
+    /* padding: 0 50px; */
+    width: 300px;
+    height: 45px;
+    box-shadow: 0 5px 8px hsl(223, 100%, 86%);
+    color: #ffffff;
+    font-family: var(--font1);
+    background: var(--Blue);
+    border: none;
+    border-radius: 50px;
+}
+
+main button:hover {
+    transition: .30s;
+    background-color: hsl(223, 100%, 75%);
+}
+
+main .dashboard-img {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .dashboard-img img {
+    width: 60%;
+}
+
+.foot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot .social-links{
+    padding: 50px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.foot .social-links .facebook{
+    padding: 6px;
+    font-size: 20px;
+    color: var(--Blue);
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+}
+
+.foot .social-links .facebook:hover{
+    transition: .30s;
+    transform: translateY(-5px);
+}
+
+.foot .social-links .twitter{
+    padding: 6px;
+    font-size: 20px;
+    color: var(--Blue);
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+}
+
+.foot .social-links .twitter:hover{
+    transition: .30s;
+    transform: translateY(-5px);
+}
+
+.foot .social-links .instagram{
+    padding: 6px;
+    font-size: 20px;
+    color: var(--Blue);
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+}
+
+.foot .social-links .instagram:hover{
+    transition: .30s;
+    transform: translateY(-5px);
+}
+
+.foot .copyright p{
+    padding: 0 0 50px 0;
+    /* font-size: 15px; */
+    color: var(--Gray);
+    font-family: var(--font1)
+}
+
+@media (max-width: 550px) {
+    main form {
+        padding: 40px 50px 50px 50px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    main form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    main .launch-txt p {
+        font-size: 25px;
+        font-family: var(--font1);
+        color: var(--Gray);
+    }
+
+    main .launch-txt h1 {
+        padding: 0 0 0 7px;
+        font-size: 25px;
+        font-family: var(--font1);
+        align-items: center;
+    }
+
+    main .subscribe-txt p {
+        padding: 10px 0 0 0;
+        font-size: 15px;
+        font-family: var(--font1);
+    }
+
+    main form{
+        padding: 40px 50px 50px 50px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    main button {
+        width: 100%;
+    }
+
+    main .dashboard-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .dashboard-img img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 330px) {
+    main .launch-txt p {
+        font-size: 15px;
+        font-family: var(--font1);
+        color: var(--Gray);
+    }
+
+    main .launch-txt h1 {
+        padding: 0 0 0 7px;
+        font-size: 15px;
+        font-family: var(--font1);
+        align-items: center;
+    }
+
+    main .subscribe-txt p {
+        padding: 10px 0 0 0;
+        font-size: 10px;
+        font-family: var(--font1);
+    }
+}
